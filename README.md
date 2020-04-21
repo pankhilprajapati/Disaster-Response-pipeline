@@ -53,6 +53,7 @@ use Anaconda distribution and install using conda
 
 3. The main page shows some graphs about training dataset, provided by Figure Eight
 
+
 ![Main Page1](screenshots/fig1.png)
 
 ![Main Page2](screenshots/fig2.png)
@@ -60,3 +61,5 @@ use Anaconda distribution and install using conda
 ![Main Page3](screenshots/fig3.png)
 
 ![Main Page4](screenshots/fig4.png)
+
+
