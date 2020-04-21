@@ -25,6 +25,15 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import joblib
 
 def load_data(database_filepath):
+    '''
+    argument:
+         database_filepath - path where .db file is stored
+    return
+         X - feature(message)
+         Y - Target
+         target_names - target names
+    '''
+
     engine = create_engine('sqlite:///{}'.format(database_filepath))
     table_name = database_filepath.split('/')[-1].split('.')[0]
     df = pd.read_sql_table(table_name,engine)
@@ -35,6 +44,13 @@ def load_data(database_filepath):
     return X,Y,target_names
 
 def tokenize(text):
+    '''
+    Argument:
+        text - Raw text
+    Return:
+        clean_tokens - list of relavant tokens
+    '''
+
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     detected_urls = re.findall(url_regex,text)
     
@@ -57,6 +73,13 @@ def tokenize(text):
 
 
 def build_model():
+    '''
+    Arguments:
+        NONE
+
+    Return :
+        clf - model is return
+    '''
     pipeline = Pipeline([
                 ('vect', CountVectorizer(tokenizer=tokenize)),
                 ('tfidf', TfidfTransformer()),
@@ -74,6 +97,17 @@ def build_model():
 
 def evaluate_model(model, X_test, Y_test, category_names):
     
+    '''
+    Arguments:
+        model - model 
+        X_test
+        Y_test
+        category_names - Target Names
+
+    Return :
+        None
+
+    '''
     
     y_pred = model.predict(X_test)
     for i in range(y_pred.shape[1]):
@@ -83,6 +117,15 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    '''
+    Arguments:
+        model - model 
+        model_filepath - Path where model is store
+
+    Return :
+        None
+
+    '''
     joblib.dump(model, model_filepath)
 
 
