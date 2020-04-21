@@ -4,17 +4,15 @@ import pandas as pd
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-
-from flask import Flask
 from flask import render_template, request, jsonify
 from plotly.graph_objs import *
 from sklearn.externals import joblib
-from sqlalchemy import create_engine
+from sqlalchemy import *
 from collections import defaultdict
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from wordcloud import STOPWORDS
-
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -217,6 +215,4 @@ def go():
         query=query,
         classification_result=classification_results
     )
-
-    
 
