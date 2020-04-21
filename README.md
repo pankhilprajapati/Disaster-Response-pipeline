@@ -22,3 +22,40 @@ Steps For Installation
     `python run.py`
 
 3. Go to http://127.0.0.1:5000/
+
+
+<a name="authors"></a>
+## Authors
+
+* [Pankhil Prajapti](https://github.com/pankhilprajapati)
+
+<a name="license"></a>
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<a name="acknowledgement"></a>
+## Acknowledgements
+
+* [Udacity](https://www.udacity.com/) for providing such a complete Data Science Nanodegree Program
+* [Figure Eight](https://www.figure-eight.com/) for providing messages dataset to train my model
+
+<a name="screenshots"></a>
+## Screenshots
+
+1. This is an example of a message you can type to test Machine Learning model performance
+
+![Sample Input](assets/class1.png)
+
+2. After clicking **Classify Message**, you can see the categories which the message belongs to highlighted in green
+
+![Sample Output](assets/class2.png)
+
+3. The main page shows some graphs about training dataset, provided by Figure Eight
+
+![Main Page](assets/fig1.png)
+
+![Main Page](assets/fig2.png)
+
+![Main Page](assets/fig3.png)
+
+![Main Page](assets/fig4.png)

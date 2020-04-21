@@ -6,7 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from flask import render_template, request, jsonify
 from plotly.graph_objs import *
-from sklearn.externals import joblib
+import joblib
 from sqlalchemy import *
 from collections import defaultdict
 from nltk.stem import WordNetLemmatizer
@@ -27,11 +27,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///data/DisasterResponse.db')
+engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponse', engine)
 
 # load model
-model = joblib.load("models/classifier.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -215,4 +215,5 @@ def go():
         classification_result=classification_results
     )
 
-
+if __name__ == "__main__":
+    app.run(debug=True)
