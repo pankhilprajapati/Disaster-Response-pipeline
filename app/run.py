@@ -154,7 +154,7 @@ def index():
             y=df_message_bigrams[0].values[:N],
             orientation='h',
           marker=dict(
-        color='rgba(255, 0, 0, 0.6)'
+        color='rgba(0, 0, 255, 0.6)'
     )
       )
             ],
@@ -174,7 +174,7 @@ def index():
             y=df_message_trigrams[0].values[:N],
             orientation='h',
           marker=dict(
-        color='rgba(255, 0, 0, 0.6)'
+        color='rgba(0, 255, 0, 0.6)'
     )
       )
             ],
@@ -220,7 +220,7 @@ def go():
 
 
 def main():
-    app.run(debug=True)
+
 
 
 if __name__ == '__main__':
