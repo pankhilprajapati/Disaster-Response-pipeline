@@ -9,7 +9,6 @@ from plotly.graph_objs import *
 from sklearn.externals import joblib
 from sqlalchemy import *
 from collections import defaultdict
-from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from wordcloud import STOPWORDS
 from flask import Flask
@@ -32,7 +31,7 @@ engine = create_engine('sqlite:///./data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponse', engine)
 
 # load model
-model = joblib.load("./models/classifier.pkl")
+model = joblib.load("/models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
