@@ -59,11 +59,11 @@ use Anaconda distribution and install using conda
 
 
 ![Main Page1](/screenshots/fig1.PNG)
-
+-
 ![Main Page2](/screenshots/fig2.PNG)
-
+-
 ![Main Page3](/screenshots/fig3.PNG)
-
+-
 ![Main Page4](/screenshots/fig4.PNG)
-
+-
 
