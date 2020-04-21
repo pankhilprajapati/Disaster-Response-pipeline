@@ -3,7 +3,11 @@
 ### Motivation
 This data is provided by the Figure-eight for the udacity Data Science NanoDegree 
 
+
+
 ### Instructions:
+
+- All the Analysis done with ETL, ML pipeline and visuals all notebooks are inside EDA
 
 Steps For Installation 
 
