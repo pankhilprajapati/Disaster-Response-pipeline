@@ -45,21 +45,21 @@ use Anaconda distribution and install using conda
 
 1. This is an example of a message you can type to test Machine Learning model performance
 
-![Sample Input](screenshots/class1.png)
+![Sample Input](screenshots/class1.PNG)
 
 2. After clicking **Classify Message**, you can see the categories which the message belongs to highlighted in green
 
-![Sample Output](screenshots/class2.png)
+![Sample Output](screenshots/class2.PNG)
 
 3. The main page shows some graphs about training dataset, provided by Figure Eight
 
 
-![Main Page1](/screenshots/fig1.png)
+![Main Page1](/screenshots/fig1.PNG)
 
-![Main Page2](/screenshots/fig2.png)
+![Main Page2](/screenshots/fig2.PNG)
 
-![Main Page3](/screenshots/fig3.png)
+![Main Page3](/screenshots/fig3.PNG)
 
-![Main Page4](/screenshots/fig4.png)
+![Main Page4](/screenshots/fig4.PNG)
 
 
